@@ -39,4 +39,23 @@ npx create-react-app xxx
       - yarn eject => 把所有隐藏在node_moudles中的webpack配置项都暴露出来(方便自己根据项目需求，二次更改webpack配置)
 
 
+      #### yarn eject
+      - babel-preset-react-app 解析JSX语法的
+      - scripts
+        - start.js => yarn start
+        - build.js => yarn build
+      - config
+        - 这里存储的就是webpack的配置项  
+
+```
+"scripts":{
+  "startMac":"PORT=8081 node scripts/start.js",
+  "start": "set PORT=8081&&set HOST=127.0.0.1&&set HTTPS=true&&node scripts/start.js",
+  "build":"node scripts/build.js"
+}
+```
+
+修改less的处理配置
+- yarn add less less-loader
+
  
